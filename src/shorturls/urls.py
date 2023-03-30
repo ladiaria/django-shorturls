@@ -11,7 +11,7 @@ def handler404(req, exc):
 
 urlpatterns = [
     re_path(
-        regex=r'^(?P<prefix>{0!s})(?P<tiny>\w+)$'.format(
+        r'^(?P<prefix>{0!s})(?P<tiny>\w+)$'.format(
             '|'.join(settings.SHORTEN_MODELS.keys())),
         view=views.redirect,
     ),
