@@ -1,6 +1,7 @@
 *.pyc
 *.pyo
 .installed.cfg
+.cursorignore
 bin
 develop-eggs
 dist
